@@ -23,7 +23,7 @@ instance.interceptors.request.use(
   (err) => Promise.reject(err),
 )
 
-//相应拦截器
+//响应拦截器
 instance.interceptors.response.use(
   (res) => {
     // TODO 3.摘取核心响应数据

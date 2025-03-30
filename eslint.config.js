@@ -45,6 +45,13 @@ export default [
       'no-undef': 'error',
     },
   },
+  {
+    globals: {
+      ElMessage: 'readonly',
+      ElMessageBox: 'readonly',
+      ElLoading: 'readonly',
+    },
+  },
 
   js.configs.recommended,
   ...pluginVue.configs['flat/essential'],
