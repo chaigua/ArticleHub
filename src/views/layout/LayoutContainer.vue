@@ -79,7 +79,7 @@ const onCommand = async (key) => {
     <el-container>
       <el-header>
         <div>
-          黑马程序员：<strong>{{ userStore.user.nickname || userStore.user.username }}</strong>
+          程序员：<strong>{{ userStore.user.nickname || userStore.user.username }}</strong>
         </div>
         <el-dropdown placement="bottom-end" @command="onCommand">
           <span class="el-dropdown__box">

@@ -15,6 +15,10 @@ instance.interceptors.request.use(
   (config) => {
     // TODO 2. 携带token
     const userStore = useUserStore()
+
+    // if (!userStore.isAuthenticated) {
+    //   return Promise.reject(new Error('未认证'))
+    // }
     if (userStore.token) {
       config.headers.Authorization = userStore.token
     }
